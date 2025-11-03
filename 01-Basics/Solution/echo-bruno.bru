@@ -6,12 +6,16 @@ meta {
 
 post {
   url: https://echo.usebruno.com?foo=bar
-  body: none
+  body: text
   auth: inherit
 }
 
 params:query {
   foo: bar
+}
+
+body:text {
+  text
 }
 
 script:pre-request {
