@@ -5,9 +5,17 @@ meta {
 }
 
 post {
-  url: https://echo.usebruno.com
-  body: none
+  url: https://echo.usebruno.com?foo=bar
+  body: text
   auth: inherit
+}
+
+params:query {
+  foo: bar
+}
+
+body:text {
+  text
 }
 
 script:pre-request {
